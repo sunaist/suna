@@ -1,0 +1,19 @@
+.brand  {
+
+  height: 64px;
+  min-width: 210px;
+
+  background-color: $white;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-image: url(../../images/brand/logo-mobile.png);
+
+
+  @include respond-to(tablet-large) {
+    height: 74px;
+    min-width: 400px;
+    max-width: 400px;
+    background-image: url(../../images/brand/logo.png);
+  }
+
+}

@@ -1,0 +1,31 @@
+.mobile-menu {
+  display: flex;
+  align-items: center;
+  background-color: $primary;
+
+  > a {
+    flex-basis: 50%;
+    padding: $spacer;
+
+  }
+
+  @include respond-to(screen-small) {
+   margin-right: auto;
+  }
+
+}
+
+
+.menu-button {
+  text-align: center;
+  color: $white;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+   @include respond-to(screen-small) {
+    display: none !important;
+  }
+}
+

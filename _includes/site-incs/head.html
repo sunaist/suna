@@ -1,0 +1,22 @@
+{% assign title = page.title | default: site.title | escape %}
+{% assign description = page.description | default: site.description | strip_html | strip_newlines | truncate: 160 %}
+{% assign url = page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url %}
+
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>{{ title }}</title>
+<meta name="description" content="{{ description }}">
+
+<!--
+<link rel="stylesheet" href="{{ "assets/styles/css/main.css" | prepend: site.baseurl }}">
+-->
+
+<link rel="stylesheet" href="{{ "assets/styles/css/suna-min.css" | prepend: site.baseurl }}">
+
+<link rel="canonical" href="{{ url }}">
+
+
+

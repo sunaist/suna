@@ -1,0 +1,82 @@
+---
+layout: page
+staff-name: Mr. Alhagie Camara
+order: 8
+designation: Technical Assistant
+area: Consulting
+qualification: Diploma
+image-path-thumb: assets/images/staff/a-camara-thumb.jpg
+image-path: assets/images/staff/a-camara.jpg
+phone: number here
+email: email here
+---
+
+  <div class="main-content content-up">
+
+      <ol class="reset-list breadcrumb breadcrumb--raquo">
+        <span class="visuallyhidden">You are here:</span>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+         <li>
+          <a href="about.html">About</a>
+        </li>
+        <li>
+          <a href="staff.html">Staff</a>
+        </li>
+        <li>
+          {{ page.staff-name }}
+        </li>
+      </ol>
+
+
+        <img src="{{ page.image-path }}" alt="{{ page.staff-name }}'s passport photo" class="avatar avatar--thumbnail-rounded pull-right">
+
+          <h1>{{ page.staff-name }}</h1>
+          <span><b>{{ page.designation }}</b></span>
+
+          <hr>
+
+          <h2>Area</h2>
+          <p>
+            {{ page.area }}
+          </p>
+
+          <h2>Highest Education</h2>
+          <p>
+            <b>{{ page.qualification }}</b>
+          </p>
+
+          <h2>Profile</h2>
+
+         <p>
+          Mr Alagie Camara is a young inspired and motivated Gambian who attended Maahad Senior Secondary School where he graduated in 2014 and later on, move to SUNA Institute of Science and Technology to pursue his career in Information Communication and Technology as part of his dreams.
+         </p>
+
+         <p>
+           Mr Camara started his Certificate program in ICT in July 2015 with a very high ambition in Technology. After his Certificate program he continued to the diploma program in 2016 which he passed out with Distinction. At the end of the diploma program, they were sent to different departments for two weeks internship training, Alagie was posted at the Gambia College where he did his 4 weeks internship program. After completion of the internship.  He is a very hardworking young man, went he finish classes he start his own business (Designing and Printing Unit) which he later expanded into an internet café.
+         </p>
+
+         <p>
+           In October, 2016, Mr Camara came to SUNA for an Internship program and served for three months in which he was able to prove himself beyond reasonable doubts. Due his capability, competent and dedication he was employed as a Technical Assistant in the consultancy department.
+         </p>
+
+
+
+          <hr>
+
+        {% include site-incs/pager.html %}
+
+
+
+
+  </div>
+
+  <aside class="sidebar js-sidebar-fixed" role="complementary">
+    {% include page-incs/about/about-menu.html %}
+  </aside>
+
+
+
+
+

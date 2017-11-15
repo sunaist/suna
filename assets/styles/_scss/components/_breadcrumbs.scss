@@ -1,0 +1,69 @@
+/**
+ *  Breadcrumbs
+ */
+
+.breadcrumb {
+
+	padding: 0 $spacer;
+  margin-bottom: $spacer !important;
+
+	> li {
+
+		display: inline-block;
+
+		&:last-child::after {
+			content: "";			/* 2 */
+			display: inline-block; /* 3 */
+		}
+
+		&:last-child {
+			font-weight: $font-weight-bold;
+			padding-left: $spacer/4;
+		}
+
+	}
+
+	a {
+		display: inline-block; /* 4 */
+		padding: $spacer/4;
+    font-size: $font-size-small;
+
+	}
+
+  > li,a {
+    color: $secondary-text-color;
+  }
+}
+
+
+/* Breadcrumbs separator types
+========================================================================== */
+.breadcrumb--sol {
+
+	> li {
+
+		&::after {
+			content: '\0002F'; //
+		}
+	}
+}
+
+.breadcrumb--raquo {
+
+	> li {
+
+		&::after {
+			content: '\00bb'; //
+		}
+	}
+}
+
+.breadcrumb--smid {
+
+	> li {
+
+		&::after {
+			content: '\02223'; //
+		}
+	}
+}

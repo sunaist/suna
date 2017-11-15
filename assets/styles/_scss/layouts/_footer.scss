@@ -1,0 +1,15 @@
+.site-footer {
+  padding: $spacer 0;
+  background: linear-gradient(to top, #005d92, #001f31);
+
+  @include respond-to(tablet-large) {
+    padding-top: $spacer*2;
+    padding-top: $spacer*2;
+  }
+}
+
+.site-footer,
+.site-footer h2,
+.site-footer a {
+  color: $white;
+}

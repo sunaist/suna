@@ -1,0 +1,75 @@
+/**
+ * 1. Make all inline elements to be block inline
+ * 2 reset all input buttons to no border
+ * 3 this sets the buttons to have the same height
+ * 4 set all default buttons to gray - change this as you will
+ */
+
+.btn {
+
+	display: inline-block;		/* 1 */
+
+	padding: $spacer/2;
+	border: 2px solid $primary;				/* 2 */
+
+	line-height: 1.15; 			/* 3 */
+	text-align: center;
+	vertical-align: middle;
+
+	color: $navy-dark;
+	border-radius: $border-radius-small;
+
+	cursor: pointer;
+
+	&:hover {
+		background-color: $primary; 	/* 4 */
+		color: $white;
+	}
+
+	&:focus	{
+		outline: none;
+	}
+}
+
+
+
+/* Button modifiers
+========================================================================== */
+
+/**
+ * Link Button with anchors tag
+ *
+ * 1. This make all the buttons to have the same font-family
+ */
+
+.btn--link {
+	font-family: sans-serif; /* 1 */
+}
+
+
+/* button sizes */
+.btn.is-large 	{
+	padding: $spacer/1.5;
+}
+
+.btn.is-x-large 	{
+	padding: $spacer/1.3;
+}
+
+
+
+
+
+/* Full-width Buttons */
+.btn--full-width {
+
+  display: block;
+  width: 100% !important;
+
+  + .btn--full-width {
+    margin-top: $spacer/2;
+  }
+}
+
+
+

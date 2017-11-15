@@ -1,0 +1,82 @@
+---
+layout: page
+staff-name: Mr. Amadou Barrow
+order: 4
+designation: Head of Department of Information Communication Technology
+area: Administration
+qualification: MSc
+image-path-thumb: assets/images/staff/a-barrow-thumb.jpg
+image-path: assets/images/staff/a-barrow.jpg
+phone: number here
+email: email here
+---
+
+  <div class="main-content content-up">
+
+      <ol class="reset-list breadcrumb breadcrumb--raquo">
+        <span class="visuallyhidden">You are here:</span>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+         <li>
+          <a href="about.html">About</a>
+        </li>
+        <li>
+          <a href="staff.html">Staff</a>
+        </li>
+        <li>
+          {{ page.staff-name }}
+        </li>
+      </ol>
+
+
+        <img src="{{ page.image-path }}" alt="{{ page.staff-name }}'s passport photo" class="avatar avatar--thumbnail-rounded pull-right">
+
+          <h1>{{ page.staff-name }}</h1>
+          <span><b>{{ page.designation }}</b></span>
+
+          <hr>
+
+          <h2>Area</h2>
+          <p>
+            {{ page.area }}
+          </p>
+
+          <h2>Highest Education</h2>
+          <p>
+            <b>{{ page.qualification }}</b>
+          </p>
+
+          <h2>Profile</h2>
+
+         <p>
+          Amadou Barrow, is an extremely accomplished professional Information Technology (IT) Instructor and Administrative Support Staff at the Suna Institute of Science and Technology, with 4 years’ experience in the IT markets, who consistently ensures the long-term viability of the institute’s programs and service portfolios. Embracing the core values of integrity, innovation, and growth, he is a calculated risk-taker, who has produced healthy, enduring and diverse tutor – students’ relationship through the initiation of his open door policy and mentorship programs during there course of training at the institute.
+         </p>
+
+         <p>
+           Mr. Barrow studied Public &amp; Environmental Health and Computer Science at BSc level at the University of The Gambia and graduated with honors in January 2014. He is currently a Master of Public Health candidate specializing in Reproductive and Family Health at the University of Benin, Nigeria. It was during his first undergraduate degree program that he developed passion for Computer Science with focus on database management, health informatics, web programming, system administration and programming. With his prior training in IT across the various professional certification training programs at Jolloftutors, he became the IT Teaching Assistant at the School of Public Health, Gambia College in January 2011. He later rose through the ranks as a Lead IT Instructor for the School of Public Health for about five years. Mr. Barrow then spent two years at Suna Institute of Science and Technology as an IT instructor for the Foundation and Microsoft Office Application programs where his responsibilities includes setting up and synchronizing administrative policies and events for officials and staff, providing professional counseling services to students, teaching, student evaluation and data management as well as supervising students' on internship.
+         </p>
+
+         <p>
+           During his most recent tenure in the IT industry, Mr. Barrow has fed his insatiable interest in application of IT in Business and emerging software applications in healthcare delivery systems through his undergraduate and postgraduate projects at the University of The Gambia and the University of Benin respectively. His interest in the IT, however, is rooted in humanitarian concerns, as reflected by the current low utilization of IT in Business and other sectors such as healthcare services as significant predictors to low output and productivity.
+         </p>
+
+
+
+          <hr>
+
+        {% include site-incs/pager.html %}
+
+
+
+
+  </div>
+
+  <aside class="sidebar js-sidebar-fixed" role="complementary">
+    {% include page-incs/about/about-menu.html %}
+  </aside>
+
+
+
+
+

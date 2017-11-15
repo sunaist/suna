@@ -1,0 +1,96 @@
+<!-- <ul class="reset-list g is-multi-line panel-alt">
+
+  <li class="g__item is-half is-quarter">
+    <time datetime="" class="time is-u-blk">
+      08 February, 2017
+    </time>
+
+    <h3 class="title">Event title comes here like so</h3>
+    <p>
+      <time datetime="" class="is-u-blk">
+        Wednesday, 10:30 - 12:00
+      </time>
+      <span>
+        <strong>Venue:</strong>
+        The Gambia College Bantaba
+      </span>
+    </p>
+  </li>
+
+  <li class="g__item is-half is-quarter">
+    <time datetime="" class="time is-u-blk">
+      08 February, 2017
+    </time>
+
+    <h3 class="title">Event title comes here like so</h3>
+    <p>
+      <time datetime="" class="is-u-blk">
+        Wednesday, 10:30 - 12:00
+      </time>
+      <span>
+        <strong>Venue:</strong>
+        The Gambia College Bantaba
+      </span>
+    </p>
+  </li>
+
+  <li class="g__item is-half is-quarter">
+    <time datetime="" class="time is-u-blk">
+      08 February, 2017
+    </time>
+
+    <h3 class="title">Event title comes here like so</h3>
+    <p>
+      <time datetime="" class="is-u-blk">
+        Wednesday, 10:30 - 12:00
+      </time>
+      <span>
+        <strong>Venue:</strong>
+        The Gambia College Bantaba
+      </span>
+    </p>
+  </li>
+
+  <li class="g__item is-half is-quarter">
+    <time datetime="" class="time is-u-blk">
+      08 February, 2017
+    </time>
+
+    <h3 class="title">Event title comes here like so</h3>
+    <p>
+      <time datetime="" class="is-u-blk">
+        Wednesday, 10:30 - 12:00
+      </time>
+      <span>
+        <strong>Venue:</strong>
+        The Gambia College Bantaba
+      </span>
+    </p>
+  </li>
+</ul> -->
+
+
+<ul class="reset-list g is-multi-line panel-alt">
+
+ {% for event in site.data.events limit :4%}
+
+  <li class="g__item is-half is-quarter">
+    <time datetime="{{event.date}}" class="time is-u-blk">
+      {{event.date}}
+    </time>
+
+    <h3 class="title">{{event.title}}</h3>
+    <p>
+      <time datetime="{event.time}}" class="is-u-blk">
+        {{event.time}}
+      </time>
+      <span>
+        <strong>{{event.venue}}</strong>
+
+      </span>
+    </p>
+      {%endfor%}
+  </li>
+
+
+</ul>

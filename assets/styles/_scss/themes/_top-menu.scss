@@ -1,0 +1,28 @@
+.top-menu {
+  display: flex;
+  align-items: center;
+  padding: $spacer/2 $spacer;
+  z-index: $z-index-nav;
+
+  span,
+  a{
+    color: $white;
+    font-weight: bold;
+  }
+}
+
+.top-menu__contacts {
+  margin-right: auto;
+
+  &.is-hidden {
+    display: none;
+  }
+
+  @include respond-to(screen-small) {
+    &.is-shown {
+      display: block;
+    }
+  }
+}
+
+

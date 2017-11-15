@@ -1,0 +1,119 @@
+/**
+ *  @name:          Embeded Styles
+ *  @inspired by:
+ *  @tested:
+ *  @requires:
+ *
+ *
+ *  @desc:
+ *  This documents contains the styles for embeded content like images, audio
+ *  and video - any media related items
+ */
+
+
+/* Responsive media
+========================================================================== */
+
+/**
+ * 1. This allows the img to adjust together with the width of the browser
+ * 2. This preserves the aspect ration of the image
+ */
+
+.media-is-responsive	{
+
+	max-width: 100%;	/* 1 */
+	height: auto;		/* 2 */
+}
+
+
+
+
+/* Image Styles for Avatars
+========================================================================== */
+
+.avatar {
+
+	display: inline-block !important;
+
+	&--circle	{
+		border-radius: 100%;
+	}
+
+	&--rounded,
+	&--thumbnail-rounded	{
+		border-radius: $border-radius-medium;
+	}
+
+	&--thumbnail,
+	&--thumbnail-rounded	{
+		border: 2px solid $gray;
+		padding: 5px;
+	}
+
+
+	/* avatar sizes */
+
+	&.is-small {
+		width: $spacer*2;
+		height: $spacer*2;
+	}
+
+	&.is-medium {
+		width: $spacer*3;
+		height: $spacer*3;
+	}
+
+	&.is-large {
+		width: $spacer*4;
+		height: $spacer*4;
+	}
+
+	&.is-x-large {
+		width: $spacer*6;
+		height: $spacer*6;
+	}
+
+	&.is-xx-large {
+		width: $spacer*8;
+		height: $spacer*8;
+	}
+}
+
+
+
+/* Intrinsic Ratios for media
+========================================================================== */
+
+/**
+ * Intrinsic Ratios for Videos, created by Thierry Koblentz on A List Apart.
+ * updated with Nicolas Gallagher aspect ratios
+ *
+ * 1. aspect ratio change accordingly or use modified classes in your HTML
+ *
+ */
+
+.media-wrapper {
+
+	position: relative;
+
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 56.25%;  /* 2 */ // 16by9
+	//padding-bottom: 75%;	// 4by3
+
+	background-color: $black;
+
+	.media-item,
+	video,
+	iframe,
+	object,
+	embed {
+
+		position:absolute;
+		top:0;
+		bottom: 0;
+
+		width:100%;
+		height:100%;
+	}
+}

@@ -1,0 +1,57 @@
+---
+layout: default
+---
+
+<div class="sw">
+
+  <header class="site-header fsh fsh--banner fsh-media  tpc tpc--cover" role="banner">
+
+    {% include site-incs/top-menu.html %}
+
+    {% include site-incs/main-menu.html %}
+
+  </header>
+
+
+	<main role="main">
+    <div class="con site-body">
+
+      <article class="article content-up">
+        <header>
+          <h1 class="article__title align-center">{{ page.title }}</h1>
+          <h2 class="align-center">{{ page.persom-program }}</h2>
+
+
+          <p class="align-center">
+            <span>
+              {% assign words = content | number_of_words %}
+              {% if words < 360 %}
+                1 min Read
+              {% else %}
+                {{ words | divided_by:180 }} mins Read
+              {% endif %}
+            </span>
+          </p>
+
+          <hr>
+
+        </header>
+
+        <div class="site-body--article">
+
+            {{ content }}
+
+        </div>
+
+      </article>
+
+    </div>
+	</main>
+
+	<footer class="site-footer" role="contentinfo">
+
+		{% include site-incs/footer.html %}
+
+	</footer>
+
+</div>

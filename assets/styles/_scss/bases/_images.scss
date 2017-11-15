@@ -1,0 +1,11 @@
+//~~~~~~~~~~~~ Responsive media ~~~~~~~~~~~~
+/**
+ * 1. This allows the img to adjust together with the width of the browser
+ * 2. This preserves the aspect ration of the image
+ */
+
+.media-is-responsive	{
+
+	max-width: 100%;	/* 1 */
+	height: auto;		/* 2 */
+}

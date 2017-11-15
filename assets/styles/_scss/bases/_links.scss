@@ -1,0 +1,52 @@
+//~~~~~~~~~~~~ Default Link ~~~~~~~~~~~~
+
+a {
+
+  color: $primary-link;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+//~~~~~~~~~~~~ Links with associated icons file/link ~~~~~~~~~~~~
+/**
+ * 1. make the a element to take the line height applied on the body for the
+ *    proper positioning of the bg img
+ */
+
+a[href$=".pdf"],
+a[href$=".doc"],
+a[href$=".mov"],
+a[href$=".jpg"]	{
+
+	display: inline-block;	/* 1 */
+	padding-right: $spacer/1.5;
+
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+
+
+/**
+ * Link file/link type indicators icons
+ *
+ * update the icons paths base on your project structure
+ */
+
+a[href$=".pdf"] {
+	background-image: url(icons/icon_pdf.png);
+}
+
+a[href$=".doc"] {
+	background-image: url(icons/icon_doc.png);
+}
+
+a[href$=".mov"] {
+	background-image: url(icons/icon_film.png);
+}
+
+a[href$=".jpg"] {
+	background-image: url(icons/icon_photo.png);
+}

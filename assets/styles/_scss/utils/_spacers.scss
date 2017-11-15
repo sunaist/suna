@@ -1,0 +1,39 @@
+.pad {
+
+  padding: $spacer/2;
+
+  @include respond-to(tablet-large) {
+    padding: $spacer;
+  }
+
+}
+
+
+/* Padding Top and Bottom */
+.pad-tb {
+
+  padding-top: $spacer/2;
+  padding-bottom: $spacer/2;
+
+  @include respond-to(tablet-large) {
+    padding-top: $spacer;
+    padding-bottom: $spacer;
+  }
+
+}
+
+
+
+
+
+
+
+// margin Bottom
+
+.magb {
+  margin-bottom: $spacer/2;
+
+  @include respond-to(tablet-large) {
+    margin-bottom: $spacer;
+  }
+}

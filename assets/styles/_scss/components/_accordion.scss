@@ -1,0 +1,37 @@
+.accordion {
+
+  border-radius: $border-radius-small;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+
+  &__title,
+  &__content {
+    padding: $spacer/2;
+  }
+
+
+  &__title {
+
+    background-color: $gray-light;
+    color: $navy-dark;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $gray;
+    }
+
+    &:focus {
+      outline: none;
+      border: 1px solid $primary;
+    }
+  }
+
+  &__content {
+    display: none;
+    background-color: $white;
+
+
+    @include respond-to(tablet-large) {
+      padding: $spacer;
+    }
+  }
+}

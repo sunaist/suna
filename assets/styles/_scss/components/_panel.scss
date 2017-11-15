@@ -1,0 +1,43 @@
+.panel {
+
+  &__item {
+    padding: $spacer/2;
+    border-bottom: 1px solid $gray;
+  }
+
+}
+
+.panel-alt {
+
+  background-color: $white;
+
+
+  > li {
+    border-bottom: 1px solid $gray;
+    padding: $spacer/2;
+
+    @include respond-to(tablet-large) {
+      &:nth-child(1),
+      &:nth-child(3)  {
+        border-right: 1px solid $gray;
+      }
+
+      &:nth-child(3),
+      &:nth-child(4)  {
+        border-bottom: none;
+      }
+
+    }
+
+    @include respond-to(screen-medium) {
+        border-right: 1px solid $gray;
+
+      &:nth-child(1),
+      &:nth-child(2)  {
+        border-bottom: none;
+      }
+    }
+  }
+
+
+}

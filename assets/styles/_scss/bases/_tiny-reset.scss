@@ -1,0 +1,58 @@
+/**
+ * Prevent padding and border from affecting element width.
+ * https://goo.gl/pYtbK7
+ */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+
+/**
+ * Set margin 0 on some elements
+ */
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+
+
+/**
+ * Set margin-bottom to maintain vertical rhythm
+ *
+ * 1. remove margin bottom on the last one for proper control gaps applied to the parent
+ */
+address,
+blockquote,
+dl,
+ol,
+ul,
+figure,
+p,
+pre,
+table,
+form,
+details {
+
+  &:not(:last-child) {
+    margin-bottom: $spacer;
+  }
+}

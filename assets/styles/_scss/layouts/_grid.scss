@@ -1,0 +1,87 @@
+.g {
+
+  display: flex;
+
+  &__item {
+
+    flex-basis: 100%;
+
+    &:not(:last-child) {
+      padding-bottom: $spacer;
+    }
+
+    @include respond-to(tablet-large) {
+      flex: 1;
+    }
+  }
+
+  &.is-multi-line {
+    flex-wrap: wrap;
+  }
+
+  &.is-gutters {
+
+    margin-left: -$spacer;
+
+    > .g__item {
+      padding-left: $spacer;
+    }
+  }
+
+}
+
+
+
+
+/* List view and gridview */
+.is-list-view {
+  flex-direction: column
+}
+
+.is-grid-view {
+
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+@include respond-to(tablet-large) {
+
+  .is-half,
+  .is-quarter {
+    flex: none;
+  }
+
+  .is-half  {
+    width: 50%;
+  }
+
+}
+
+@include respond-to(screen-medium) {
+
+  .is-quarter {
+    width: 25%
+
+  }
+
+  .is-third  {
+    width: 33.3333%;
+    flex: none;
+  }
+
+}
+
+
+
+// clearfix
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+

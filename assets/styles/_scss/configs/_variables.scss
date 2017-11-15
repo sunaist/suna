@@ -1,0 +1,86 @@
+//~~~~~~~~~~~~ Colors ~~~~~~~~~~~~
+
+// Primary color
+$primary:               #0071b2;
+$primary-text-color:    #222222;
+$secondary-text-color:  #727272;
+
+// Background and Base colors
+$white:						 #fff;
+$black:						 #000;
+$gray:             #d9d9d9;
+$gray-light:       #e5e5e5;
+$gray-lighter:		 #f5f5f5;
+
+// Special state colors
+$primary-link:                   $primary;
+$selection-highlight-bg-color:   $primary; //rgba(255,245,20,.8); // Yellow
+$selection-highlight-fg-color:   $white;
+
+// Tertiary colors
+$red:             #96281b;
+$blue:            #4183d7;
+$green:           #1e824c;
+$orange:          #f18d05;
+$purple:          #663399;
+$navy-dark:       #22313f;
+
+
+
+
+//~~~~~~~~~~~~ Typo ~~~~~~~~~~~~
+
+// Font stack families
+$sans-serif:	Roboto, -apple-system, "Source Sans Pro", "Helvetica Neue", Helvetica, Verdana, Arial, Ubuntu, sans-serif;
+$serif: 			Merriweather, Georgia, serif;
+$code: 				source-code-pro, Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+
+$font-family-primary:  	$sans-serif;
+$font-family-secondary: $serif;
+$font-family-code:      $code;
+$font-size-base:        100%;
+$base-line:             1.5; 	   // 24px / 16px
+
+// Font weights
+$font-weight-thin: 		100;
+$font-weight-light: 	300;
+$font-weight-normal: 	400;
+$font-weight-bold: 		700;
+
+// Font sizes
+$font-size-small: 			0.875em;
+$font-size-medium: 			1.250em;
+$font-size-large:       1.500em;
+$font-size-x-large: 		1.750em;
+$font-size-huge: 		    2.250em;
+
+
+
+
+//~~~~~~~~~~~~ Display and Box Model ~~~~~~~~~~~~
+
+// Spacing for vertical rythme
+$spacer:	1.5em; // The same with the base line height
+
+// border radius sizes
+$border-radius-small: 		2px;
+$border-radius-medium: 		6px;
+$border-radius-large: 		100px;
+
+
+
+
+//~~~~~~~~~~~~ Z Index Scale ~~~~~~~~~~~~
+
+$z-index-1:     100;
+$z-index-2:     200;
+$z-index-3:     300;
+$z-index-4:     400;
+$z-index-5:     500;
+$z-index-6:     600;
+
+// Z-Index Applications is apply to the components on the way they overlap each other
+$z-index-nav:            $z-index-2;
+$z-index-nav-dropdown:   $z-index-3;
+$z-index-modal:          $z-index-4;
+$z-index-modal-content:  $z-index-5;

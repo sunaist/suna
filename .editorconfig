@@ -1,0 +1,26 @@
+# EditorConfig is awesome: http://EditorConfig.org
+
+root = true
+
+# Unix-style newlines with a newline ending every file
+[*]
+indent_style = space
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# 2 space indentation
+[*.{html, scss, js}]
+indent_size = 2
+
+[Gemfile*]
+indent_size = 2
+
+[Rakefile]
+indent_size = 2
+
+# 4 spaces indentation
+[*.md]
+indent_size = 4
+trim_trailing_whitespace = false

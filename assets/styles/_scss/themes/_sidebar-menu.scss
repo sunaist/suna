@@ -1,0 +1,29 @@
+.sidebar-menu {
+
+  border-bottom: 1px solid $gray;
+  background-color: $gray-lighter;
+
+  > a {
+
+    display: block;
+    padding: $spacer/1.5;
+    border-bottom: 1px solid $gray;
+    color: $navy-dark;
+
+    &:hover {
+      border-left: 2px solid $primary;
+      background-color: $gray-light;
+    }
+
+    &.is-active {
+      border-left: 2px solid $primary;
+      background-color: $primary;
+      color: $white;
+    }
+  }
+
+}
+
+
+
+

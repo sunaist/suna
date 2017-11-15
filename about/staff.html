@@ -1,0 +1,56 @@
+---
+title: Staff
+layout: page
+permalink: staff.html
+side-menu-about-order: 4
+---
+
+  <div class="main-content content-up">
+
+      <ol class="reset-list breadcrumb breadcrumb--raquo">
+        <span class="visuallyhidden">You are here:</span>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+         <li>
+          <a href="about.html">About</a>
+        </li>
+        <li>
+          {{ page.title }}
+        </li>
+      </ol>
+
+      <h1>{{ page.title }}</h1>
+
+      <p>
+        The Work force of SUNA has accommodated a diverging specialists and talents in different periods and in different areas of responsibilities since April 2016. The current team is well stabilised with their mandates specified on the list of staff.
+      </p>
+
+      <div class="g is-multi-line is-gutters">
+
+        {% assign staff = site.staff | sort: 'order' %}
+        {% for staff in staff %}
+
+          <div class="g__item is-half">
+          <div class="card align-center">
+              <img src="{{ staff.image-path-thumb }}" alt="{{ staff.staff-name }}'s passport photo" class=" avatar avatar--circle" width="250" height="250">
+
+              <p>
+                <b>{{ staff.staff-name }}</b> <br>
+                <span>{{ staff.designation }}</span>
+              </p>
+
+              <a href="{{ staff.url | replace: '/', '' }}.html" class="btn btn--full-width">View full profile &rarr;</a>
+          </div>
+        </div>
+
+        {% endfor %}
+
+
+      </div>
+
+  </div>
+
+  <aside class="sidebar js-sidebar-fixed" role="complementary">
+   {% include page-incs/about/about-menu.html %}
+  </aside>

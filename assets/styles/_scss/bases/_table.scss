@@ -1,0 +1,26 @@
+//~~~~~~~~~~~~ Table ~~~~~~~~~~~~
+
+table {
+
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid $gray;
+
+  background-color: $white; //change this base on the background color of the body
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+
+  th {
+    text-align: left;
+
+    background-color: $gray-light;
+  }
+
+  th,
+  td {
+  	padding: $spacer/2.75;
+  }
+
+}
+
+

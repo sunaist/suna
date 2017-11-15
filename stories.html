@@ -1,0 +1,54 @@
+---
+title: Stories
+layout: page
+permalink: stories.html
+main-menu-order: 6
+---
+
+  <div class="content-up">
+
+    <ol class="reset-list breadcrumb breadcrumb--raquo">
+      <span class="visuallyhidden">You are here:</span>
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        {{ page.title }}
+      </li>
+    </ol>
+
+    <h1>{{ page.title }}</h1>
+
+    <p>
+      This page list the stories of some of our successful students
+    </p>
+
+    <div class="g is-multi-line is-gutters">
+
+    {% assign stories = site.stories | sort: 'order' | reverse %}
+    {% for storie in stories %}
+
+      <div  class="g__item is-half">
+
+        <div class="card card--dibsy tpc ">
+
+          <img class="card__media media-is-responsive" src="{{ storie.image-path }}" alt="{{ storie.person-name }}'s photo">
+
+          <div class="pos-abs pos-abs--bottom">
+            <span class="tpc__item">
+              {{ storie.person-name }} - {{ storie.persom-program }}
+            </span>
+            <a href="{{ storie.url | replace: '/', '' }}.html" class="tpc__item tpc__item--btn">Read Full Story →</a>
+          </div>
+
+        </div>
+
+      </div>
+    {% endfor %}
+
+    </div>
+
+
+
+  </div>
+

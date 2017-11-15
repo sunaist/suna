@@ -1,0 +1,111 @@
+// * Wrapper
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.sw {
+  min-width: 360px;
+  max-width: 1920px;
+}
+
+
+
+// Container
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.con {
+
+  max-width: 1600px;
+  margin: 0 auto;
+  width: 94%;
+
+  @include respond-to(tablet-small) {
+    width: 85%;
+  }
+
+  @include respond-to(tablet-large) {
+    width: 96%;
+  }
+
+  @include respond-to(screen-large) {
+  width: 75%;
+  }
+
+  @include respond-to(screen-huge) {
+  width: 70%;
+  }
+
+  &--wider {
+    @include respond-to(tablet-large) {
+      width: 96%;
+    }
+  }
+
+}
+
+
+//Site body
+.site-body {
+  max-width: 1366px;
+}
+
+.site-body--article {
+  margin: 0 auto;
+  max-width: 650px;
+}
+
+// Main content
+.content-up {
+  position: relative;
+  margin-top: -$spacer*2;
+  padding: $spacer/2;
+  background-color: $white;
+}
+
+
+// sidebar
+
+.sidebar {
+  padding-top: $spacer*2;
+  padding-bottom: $spacer*2;
+}
+
+
+@include respond-to(tablet-large) {
+
+  //Site body
+  .site-body {
+    /* display: flex;
+    flex-wrap: wrap; */
+  }
+
+  .content-up {
+    margin-top: -$spacer*2.5;
+    padding: $spacer $spacer*3 $spacer*3 $spacer*3;
+  }
+
+  // Main content
+  .main-content{
+    //order: 2;
+    width: 75%;
+    float: right;
+  }
+
+
+  // Side bar
+  .sidebar {
+    //order: 1;
+    width: 25%;
+    max-width: 280px;
+    float: left;
+  }
+
+  .main-content,
+  .sidebar {
+    //flex: none;
+  }
+
+  .sidebar-fixed {
+    position: fixed;
+    top: 0;
+  }
+
+}
+

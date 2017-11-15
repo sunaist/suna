@@ -1,0 +1,72 @@
+/**
+ * Pagination reset
+ *
+ * reset the ul,ol and li to padding 0, margin 0 and list style none;
+ *
+ */
+
+.pagers	{
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+
+	a {
+		display: block;
+    padding: $spacer/3 $spacer/2;
+    border: 2px solid $primary;
+    color: $navy-dark;
+    border-radius: $border-radius-small;
+	}
+}
+
+
+
+/**
+ * pager controls
+ *
+ */
+
+.pagers	{
+
+  > li:first-child {
+    margin-right: auto;
+  }
+
+	> li:first-child a {
+		&::before	{
+			padding-right: $spacer/4;
+			content: '\000AB';
+		}
+	}
+
+	> li:last-child a {
+
+		&::after	{
+			padding-left: $spacer/4;
+			content: '\000BB';
+		}
+	}
+}
+
+
+
+/* Pager modifiers
+========================================================================== */
+
+
+.pagers--rounded {
+
+	a {
+		border: 2px solid $primary;
+		border-radius: $border-radius-large;
+
+    &:hover {
+      background-color: $primary;
+      color: $white;
+    }
+	}
+
+}

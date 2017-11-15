@@ -1,0 +1,50 @@
+//~~~~~~~~~~~~ Transparent cover ~~~~~~~~~~~~
+/*
+ * 1. This makes the absolution positioning of the child element
+ *    to fill the parent and not go beyond the parent.
+ * 2.
+ * 3.
+ * 4.
+ * 5.
+ */
+.tpc {
+
+  position: relative; /* 1 */
+
+  &::before {
+    position: absolute; /* 2 */
+    content: ""; /* 3 */
+    background-color: rgba(34, 34, 34, .3); /* 4 */
+  }
+}
+
+
+.tpc--cover {
+
+  &::before {
+    top: 0;   /* 5 */
+    bottom: 0; /* 5 */
+    left: 0; /* 5 */
+    right: 0; /* 5 */
+  }
+}
+
+
+.tpc__item {
+
+  background-color: rgba(255, 255, 255, .9);
+  display: inline-block;
+  padding: $spacer/3;
+  color: $black;
+}
+
+.tpc__item--btn {
+  &:hover {
+    background-color: $primary;
+    color: $white;
+  }
+}
+
+
+
+

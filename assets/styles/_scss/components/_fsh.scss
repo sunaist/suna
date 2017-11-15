@@ -1,0 +1,53 @@
+//~~~~~~~~~~~~ Full Screen Height ~~~~~~~~~~~~
+/**
+ * Full Screen Height for image/background on a page
+ *
+ * Make sure to apply height: 100%; on both the html and body root element
+ * if you are using a wrapper after the body, make to apply it to that one also
+ *
+ * 0. Make the bg/bg media to take full screen height
+ * 1. 60% of the view port on larger devices
+ * 2. 90% of the view port on larger devices
+ */
+
+ html,
+ body,
+ .sw {
+  height: 100%; /* 0 */
+ }
+
+.fsh {
+
+  height: 60%; /* 1 */
+  background: linear-gradient(to top, #00a2ff, #00243a);
+  background-attachment: fixed;
+
+  @include respond-to(screen-small) {
+    height: 90%;  /* 2 */
+  }
+}
+
+
+
+//~~~~~~~~~~~~ Full Screen Height Media ~~~~~~~~~~~~
+.fsh-media {
+  background-image: url(../../images/featured/ft6.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+
+//~~~~~~~~~~~~ Full Screen Height Modifiers ~~~~~~~~~~~~
+
+/**
+ * 1. 30% of the view port for inner page banners
+ */
+
+.fsh--banner {
+  height: 40%; /* 1 */
+  background-image: url(../../images/banner/bn1.jpg);
+}
+
+

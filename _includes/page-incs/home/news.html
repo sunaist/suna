@@ -1,0 +1,35 @@
+<div class="g is-multi-line is-gutters">
+
+  {% for post in site.posts limit 2 %}
+
+    <div  class="g__item is-half">
+
+      <div class="card card--wild">
+
+        <img class="card__media media-is-responsive" src="{{ post.image-path }}" alt="card image name here">
+
+        <div class="card__body">
+
+          <time datetime="" class="time is-u-blk">
+           {{ post.date |  date: "%b %-d, %Y"}}
+          </time>
+
+
+          <div class="">
+            <h2 class="title">{{ post.title }}</h2>
+            <p>
+              {{ post.excerpt }}
+            </p>
+
+            <a href="{{ post.url }}" class="btn">Read full story →</a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  {% endfor %}
+
+
+</div>

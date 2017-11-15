@@ -1,0 +1,10 @@
+<nav class="nav sidebar-menu">
+{% assign side-menu-academics = site.html_pages | sort: 'side-menu-academics-order' %}
+{% for p in side-menu-academics %}
+  {% if p.side-menu-academics-order %}
+      <a href="{{ p.url | replace: '/', '' }}" {% if p.url == page.url %}class="is-active"{% endif %}>
+        {{ p.title }}
+      </a>
+  {% endif %}
+{% endfor %}
+</nav>

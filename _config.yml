@@ -1,0 +1,54 @@
+# Welcome to Suna config file
+
+# Site settings
+title: Suna Institute of Science And Technology
+email: sunaconsultant@gmail.com
+description: >
+  SUNA Institution of Science and Technology is a Science and Information Technology (IT)
+  educational institution that provide quality IT Education and Consulting.
+baseurl: ""
+url: "http://suna.edu.gm"
+
+
+# Other site wide variables
+facebook: "https://www.facebook.com/SunaInstitute/"
+phone: "4484888 / 7926670"
+current-year: "2017"
+
+
+# Build settings
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+# Sass Settings
+sass:
+  sass_dir: assets/styles/_scss
+  style: compressed
+
+
+# Exclude the following from the Jekyll build process.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+
+
+# Collections
+collections:
+  programs:
+    output: true
+    permalink: :path
+
+  staff:
+    output: true
+    permalink: :path
+
+  stories:
+    output: true
+    permalink: :path

@@ -1,0 +1,16 @@
+[role="main"] > section {
+  &:nth-child(even) {
+    background-color: $gray-light;
+  }
+}
+
+
+// Pattern bg on the about section of the home page
+.pattern-bg-img {
+  background-image: url(../../images/pattern-png.png);
+  background-color: #f7f7f7;
+}
+
+
+
+

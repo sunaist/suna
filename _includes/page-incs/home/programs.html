@@ -1,0 +1,47 @@
+<div class="g is-multi-line is-gutters">
+
+  <div class="g__item is-half">
+
+    <p>
+     At SUNA, we offer a wide range of programs to cater for the difference in choices of people studying information communication technology. We cover most things that might not have been deemed necessary elsewhere and also provides the practical knowledge required for execution; theory is not the only basis we teach on.
+    </p>
+
+    <figure>
+      <img class="media-is-responsive" src="assets/images/student1.jpg" alt="card image name here">
+    </figure>
+
+    <p>
+      Choosing the right programs to offer our students puts us in the position of producing potential students who will excel in their various chosen careers with ease in the future, a sign of a productive time of learning and education, something every willing student should opt for. Each program touches on the relevant details of the specific discipline and goes in depth to explain even beyond that for more understanding and clarification.
+    </p>
+
+  </div>
+
+  <div class="panel g__item is-half">
+
+      {% assign programs = site.programs | sort: 'program-order' %}
+      {% for program in programs limit: 6 %}
+
+      <div class="panel__item">
+
+        <h3 class="title">{{ program.program-name }}</h3>
+
+        <div class="panel__body">
+          <span>
+            <b>Duration</b>:  {{ program.duration }},
+          </span>
+          <span>
+            <b>Tuition</b>: {{ program.tuition }},
+          </span>
+          <span>
+            <b>Sessions</b> {{ program.sessions }}
+          </span>
+        </div>
+
+      </div>
+    {% endfor %}
+
+  </div>
+
+  <a href="programs.html" class="btn">See all Programs &rarr;</a>
+
+</div>

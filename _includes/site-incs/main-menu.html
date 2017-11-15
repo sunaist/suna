@@ -1,0 +1,29 @@
+<nav class="nav main-menu pos-rel">
+
+  <!-- A logo and the mobile menu toggle button -->
+  <div class="mobile-menu">
+    <a href="index.html" class="brand">
+      <span class="visuallyhidden">Suna Institute of Science and Tecnology</span>
+    </a>
+    <a href="#" class="menu-button js-menu-toggle" aria-label="Toggle navigation">
+      <span>Menu</span>
+    </a>
+  </div>
+
+  <ul class="nav__list main-menu__list js-main-menu__list is-hidden is-shown">
+    {% assign navigation_pages = site.html_pages | sort: 'main-menu-order' %}
+    {% for p in navigation_pages %}
+      {% if p.main-menu-order %}
+        <li>
+          <a href="{{ p.url | replace: '/', '' }}" {% if p.url == page.url %}class="is-active"{% endif %}>
+            {{ p.title }}
+          </a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+</nav>
+
+
+

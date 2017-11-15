@@ -1,0 +1,112 @@
+//~~~~~~~~~~~~ Core form elements ~~~~~~~~~~~~
+
+textarea,
+input,
+select {
+
+  display: block;
+  width: 100%;
+  border: 1px solid $gray;
+  border-radius: $border-radius-small;
+  padding: $spacer/2.5; /* 1 */
+
+  background-color: $white;
+  font-family: $sans-serif;
+  vertical-align: middle;
+
+  &:hover {
+    background-color: #fff2c0;
+  }
+
+  &:focus {
+    outline: 0;
+    background-color: #FFFAE4;
+    border-color: #FFEA97;
+  }
+
+  @media print {
+    border: 1px solid $black;
+  }
+}
+
+
+
+
+/* input type file  */
+input[type="file"] {
+    border-style: dotted;
+    border-width: 2px;
+}
+
+/* input type color */
+[type=color]	{
+	padding: 2px;
+	height: 44px;
+}
+
+
+/* label */
+label {
+
+	display: inline-block;
+	font-weight: $font-weight-bold;
+
+	> abbr[title="required"],
+	> abbr[title="Required"] {
+
+	    border-bottom: none;
+	    color: $red;
+	}
+}
+
+
+
+
+/*
+ * Select
+ *
+ * 1. Allow select box to be the same in all broswers
+ */
+select	{
+	line-height: 1.5; /* 1 */
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+
+
+
+/*
+ * Textarea
+ *
+ * 1. Allow only vertical resizing of textareas.
+ *    https://html5boilerplate.com/
+ */
+textarea {
+    min-height: $spacer*8;
+    resize: vertical;	/* 1 */
+}
+
+
+
+
+/* disable components */
+textarea[disabled],
+input[disabled],
+select[disabled],
+textarea.is-disabled,
+input.is-disabled,
+select.is-disabled {
+
+    background-color: $gray;
+
+    &:hover {
+        cursor: not-allowed;
+        background-color: $gray;
+    }
+
+}
+
+
+

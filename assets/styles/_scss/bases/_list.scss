@@ -1,0 +1,22 @@
+//~~~~~~~~~~~~ List ~~~~~~~~~~~~
+/**
+ * Reset ul and ol
+ */
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+
+ul,
+ol  {
+
+	margin-left: $spacer*1.5;
+
+	/* nested list */
+	ol, ul {
+		margin-top: $spacer/3;
+    margin-left: $spacer;
+	}
+}
