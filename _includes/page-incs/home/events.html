@@ -74,7 +74,7 @@
 
  {% for event in site.data.events limit :4%}
 
-  <li class="g__item is-half is-quarter">
+  <li class="g__item is-half is-quarter  wow fadeInLeft" data-wow-delay="1.2s">
     <time datetime="{{event.date}}" class="time is-u-blk">
       {{event.date}}
     </time>

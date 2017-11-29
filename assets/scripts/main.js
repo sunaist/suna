@@ -17,7 +17,7 @@ $(document).ready(function()  {
 //fixed sidebar
 $(document).ready(function()  {
 
-  /* it seems javascript..*/
+ 
   var topLimit = $('.js-sidebar-fixed').offset().top;
 
   $(window).scroll(function() {

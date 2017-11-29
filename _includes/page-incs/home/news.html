@@ -1,10 +1,10 @@
 <div class="g is-multi-line is-gutters">
 
-  {% for post in site.posts limit 2 %}
+  {% for post in site.posts limit:2 %}
 
     <div  class="g__item is-half">
 
-      <div class="card card--wild">
+      <div class="card card--wild  wow flipInY" data-wow-delay="1.5s">
 
         <img class="card__media media-is-responsive" src="{{ post.image-path }}" alt="card image name here">
 
